@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="formatacao.css"/>
+        <link rel="stylesheet" type="text/css" href="../../formatacao.css"/>
         <title>Pesquisa Produto</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,18 +27,7 @@
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-        
-                                    <script language="javascript">
-                                function opcaoPesquisa(){
-                                    if(document.getElementById('buscaID').checked === true){
-                                        document.getElementById('buscaDesc').disabled = false;
-                                    }
-                                    if(document.getElementById('buscaDesc').checked === true){
-                                        document.getElementById('buscaID').disabled = false;
-                                    }
-                                }
-                                </script>
-    </head>
+
     <body>
         <nav>
             <ul class="menu"></ul>
@@ -47,17 +36,12 @@
                     <br>
                     <h1 style="color: white">-------Pesquisa do Produto-------</h1>  
                     <div>
-                        <br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br>
                         <div class="centralizarLogin">
                         <form method="post" action="${pageContext.request.contextPath}/produto/consulta">
-
-                            <form method="post" action="${pageContext.request.contextPath}/produto/consulta">
-                                <input type="RADIO" name="opcao" value="opID" id="buscaID">ID&nbsp;&nbsp;
-                                <input type="RADIO" name="opcao" value="opDescricao" id="buscaDesc">Descrição  
                             <hr></hr>
-                            <label for="nome">ID&nbsp;&nbsp;<input  onclick="opcaoPesquisa()"style="width: 112%;" type="text" name="idProd" id="idProd"/></label>
+                            <label for="idProd">Id Produto&nbsp;<input  style="width: 100%;" type="text" name="idProd" id="idProd"/></label>
                             <br>
-                            <label for="descricao">Descrição <textarea onclick="opcaoPesquisa()" style="width: 100%;" name="descricao"></textarea></label>   
                             <br>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
