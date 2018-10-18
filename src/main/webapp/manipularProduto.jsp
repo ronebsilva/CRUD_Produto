@@ -30,7 +30,7 @@
     <body>
         <nav>
             <ul class="menu">
-                <li><a href="WEB-INF/Produto/pesquisaproduto.jsp">Pesquisar produto</a></li> 
+                <li><a href="pesquisaproduto.jsp">Pesquisar produto</a></li> 
                 <li><a href="produto.jsp">Cadastrar novo produto</a></li>                        
                 <li><a href="#">Alterar produto</a></li>                        
                 <li><a href="#">Excluir produto</a></li>  

@@ -33,7 +33,7 @@ import javax.servlet.http.HttpServletResponse;
           
         
         RequestDispatcher dispatcher
-                = request.getRequestDispatcher("/WEB-INF/Produto/pesquisaproduto.jsp");
+                = request.getRequestDispatcher("pesquisaproduto.jsp");
         dispatcher.forward(request, response);
     }
    
@@ -58,7 +58,7 @@ import javax.servlet.http.HttpServletResponse;
         
         RequestDispatcher dispatcher
                 = request.getRequestDispatcher(
-                        "/WEB-INF/Produto/resultadoConsulta.jsp");
+                        "resultadoConsulta.jsp");
         dispatcher.forward(request, response);
     }
 }
